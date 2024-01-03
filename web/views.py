@@ -15,5 +15,3 @@ def index (request):
         'categorias':listaCategorias
     }
     return render(request, 'index.html', context)
-
-    
