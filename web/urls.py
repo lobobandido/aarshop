@@ -8,6 +8,5 @@ app_name = 'web'
 
 urlpatterns = [
     path('', views.index,name='index'),
-    #path('productosPorCategoria/<int:categoria_id>',views.productosPorCategoria,name='productosPorCategoria'),
-    #path('productosPorCategoria/<int:categoria_id>',views.productosPorCategoria,name='productosPorCategorias'),
+    path('productosPorCategoria/<int:categoria_id>',views.productosPorCategoria,name='productosPorCategorias'),
 ] 
