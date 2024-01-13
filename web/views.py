@@ -14,7 +14,8 @@ def index (request):
         'productos':listaProductos,
         'categorias':listaCategorias
     }
-    return render(request, 'index.html', context)
+    return render(request, 'index.html', context)  
+
 def productosPorCategoria(request,categoria_id):
         """vista para filtrar productos por categoria"""
         objCategoria = Categoria.objects.get(pk=categoria_id)
@@ -26,6 +27,4 @@ def productosPorCategoria(request,categoria_id):
            'categorias':listaCategorias,
            'productos':listaProductos
         }
-
-    return render(request,'index.html',context)
-
+        return render(request,'index.html',context)
